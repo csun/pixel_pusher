@@ -1,0 +1,15 @@
+#! /usr/bin/env python
+import sys
+
+from lib.board import Board
+from lib.moves import list_from_file
+
+board = Board(sys.argv[1])
+moves = list_from_file(sys.argv[2])
+
+num_moves = board.execute_moves(moves)
+
+if board.is_solved():
+    print "Solved in " + str(num_moves) + " move(s)."
+else:
+    print "Not solved."
