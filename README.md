@@ -40,4 +40,4 @@ Takes in two integers and a file path. Generates a palette with PALETTE_SIZE row
 ### visualize
 `./visualize PALETTE_PATH PUSHES_PATH`
 
-Arguments are the same as `check`. Let's you watch all the moves happen in real time.
+Arguments are the same as `check`. Lets you watch all the moves happen in real time.
