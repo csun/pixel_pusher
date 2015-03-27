@@ -25,7 +25,7 @@ Defines an ordered list of pixel-pushes. The first line is M, the number of push
 Note that this push list solves the palette above.
 
 ## Scripts
-There are three scripts included in this repository to help you get started.
+There are four scripts included in this repository to help you get started.
 
 ### check
 `./check PALETTE_PATH PUSHES_PATH`
@@ -35,9 +35,14 @@ Takes in a path to a palette file and a pushes file and outputs wheter or not th
 ### generate
 `./generate PALETTE_SIZE NUM_PUSHES OUTPUT_FILE`
 
-Takes in two integers and a file path. Generates a palette with PALETTE_SIZE rows and columns, performs NUM_PUSHES random pushes, and writes the result to OUTPUT_FILE
+Takes in two integers and a file path. Generates a palette with PALETTE_SIZE rows and columns, performs NUM_PUSHES random pushes, and writes the result to OUTPUT_FILE. If you do not specify an OUTPUT_FILE, generate will write to `in.palette`.
 
 ### visualize
 `./visualize PALETTE_PATH PUSHES_PATH`
 
 Arguments are the same as `check`. Lets you watch all the moves happen in real time.
+
+### time
+`./time COMMAND`
+
+Times your program and kills it if it takes longer than 15 seconds. This is what we will be using to actually run programs. If your program takes less than 15 seconds, the time it took to run will be printed.
