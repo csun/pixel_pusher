@@ -45,6 +45,7 @@ stdscr.refresh()
 while 1:
     c = win.getch()
     if c == ord('q'):
+        curses.endwin()
         break
     elif c == ord('s'):
         started = True

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./timeout 15 time $*
+./timeout 30 time $*

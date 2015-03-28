@@ -64,6 +64,7 @@ class Board:
             for col in row:
                 if col != "*" and col < last_seen:
                     return False
+                last_seen = col
 
         return True
 
