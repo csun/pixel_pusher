@@ -2,7 +2,9 @@
 A toolkit and visualizer for the Optimization question @ Northeastern's Code Showdown 2015
 
 ## Requirements
-A system with python installed
+Any system with python installed can run the crucial scripts. If you're running Windows, run the scripts with `python` instead of invoking them directly. 
+
+The `time` script is designed for *nix systems only.
 
 ## File Formats
 All pixel_pusher scripts either input or output files of the following types:
